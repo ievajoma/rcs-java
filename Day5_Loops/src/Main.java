@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        task1();
-        task2();
+//        task2();
+        task3();
     }
 
     public static void task1() {
@@ -32,5 +33,21 @@ public class Main {
             result = result * skaitlis;
         }
         System.out.println("Kāpinājums skaitlim " + skaitlis + " ir " + result);
+    }
+
+    public static void task3() {
+        Scanner sc = new Scanner(System.in);
+        String input = "";
+        int result = 0;
+
+        while(!input.equals("jā")){
+            System.out.println("Ievadiet skaitli");
+            int skaitlis = sc.nextInt();
+            result = result + skaitlis;
+            System.out.println("Vai beigt darbu?");
+            input = sc.nextLine();
+        }
+        System.out.println(result);
+
     }
 }
