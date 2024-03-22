@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Ievadiet skaitli - kāpinātāju");
         int kapinatajs = sc.nextInt();
         int result = skaitlis;
-        for(int i = 1; i <= kapinatajs; i++){
+        for(int i = 1; i < kapinatajs; i++){
             result = result * skaitlis;
         }
         System.out.println("Kāpinājums skaitlim " + skaitlis + " ir " + result);
