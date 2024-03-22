@@ -14,8 +14,8 @@ public class Main {
             task1();
         }
         int result = 1;
-        for(int i = 0; i < x; i++ ){
-            result = result * x;
+        for(int i = 1; i <= x; i++ ){
+            result = result * i;
         }
         System.out.println("Faktoriālis ir " + result);
     }
