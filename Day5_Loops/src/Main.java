@@ -45,7 +45,7 @@ public class Main {
             int skaitlis = sc.nextInt();
             result = result + skaitlis;
             System.out.println("Vai beigt darbu?");
-            input = sc.nextLine();
+            input = sc.next();
         }
         System.out.println(result);
 
