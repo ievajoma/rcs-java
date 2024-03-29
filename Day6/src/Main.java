@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         sample1("jgfkla", "kj", "lkjagf");
-        task2(3);
+        task2(-5);
     }
 
     public static void sample1(String a, String b, String c){
@@ -13,6 +13,9 @@ public class Main {
 
     public static void task2(int a){
         Scanner sc = new Scanner(System.in);
+        if(a < 1){
+            return;
+        }
         int result = 0;
         for(int i = 0; i < a; i++ ){
             System.out.println("Ievadiet skaitli!");
