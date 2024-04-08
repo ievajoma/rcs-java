@@ -10,16 +10,15 @@ public class Main {
     }
 
     public static void classwork2(){
-        int[] m = new int[10];
-        int summa = 0;
+        double[] m = new double[10];
+        double summa = 0;
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < m.length; i++){
             System.out.println("Ievadiet skaitli!");
-            m[i] = (int) sc.nextDouble();
+            m[i] = sc.nextDouble();
             summa = summa + m[i];
         }
-        int videjais = summa / 10;
-        System.out.println(videjais);
+        System.out.println(summa / m.length);
     }
 
 
