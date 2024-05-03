@@ -1,0 +1,28 @@
+.Intro{
+    background-color: rgb(160, 148, 130);
+    width: 80%;
+    padding: 4%;
+}
+.Intro h1{
+    color: rgb(60, 60, 60);
+} 
+.Live{
+    background-color: rgb(206, 191, 169);
+    width: 70%;
+    padding: 9%;
+}
+.Live h1{
+    color: rgb(80, 80, 80);
+}
+.Contact{
+    background-color: rgb(160, 148, 130);
+    width: 80%;
+    padding: 4%;
+    text-align: right;
+}
+.Contact h3{
+    color: rgb(60, 60, 60);
+}
+.Contact p{
+    margin-top: -10px;
+}
