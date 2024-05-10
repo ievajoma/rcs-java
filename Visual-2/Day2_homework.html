@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>majasdarbs-2</title>
+    </head>
+    <body>
+        <div class="button">
+            <input type="text" id="lietotajsInput">
+            <button class="btn2" onclick="dalijums()">Ievadiet laukā pa kreisi jebkuru vārdu un nospiežat pogu</button>
+        </div>
+
+        <script>
+            function dalijums(){
+                let dalamais = document.getElementById("lietotajsInput").value;
+                const masivs = dalamais.split("");
+                for(let i = 0; i < masivs.length; i++){
+                    alert(masivs[i]);
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
