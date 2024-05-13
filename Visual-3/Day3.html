@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>klasesdarbs-3</title>
+    </head>
+    <body>
+        <div class="button">
+            <input type="text" id="lietotajsInput">
+            <button class="btn1" onclick="mekletajs()">Ievadiet laukā pa kreisi 
+                krāsu un nospiežat pogu</button>
+        </div>
+
+        <script>
+            function dalijums(){
+                let dalamais = document.getElementById("lietotajsInput").value;
+                let masivs = dalamais.split(" ");
+                let garakais = masivs[0];
+
+                for(let i = 0; i < masivs.length; i++){
+                    if(garakais.length < masivs[i].length){
+                        garakais = masivs[i];
+                    }
+                }
+                alert(garakais);
+            }
+
+            function task2(){
+                let userInput = document.getElementById("lietotajsInput").value;
+                
+                if(userInput==""){
+                    alert("Jāievada vērtība");
+                    return;
+                }
+
+                let arr = userInput.split(" ");
+                let longestWord = "";
+                
+                for(let i = 0; i<arr.length; i++){
+                    if(longestWord.length < arr[i].length && isNaN(arr[i]) == true){
+                        longestWord = arr[i];
+                    }
+                }
+                alert(longestWord);
+            }
+
+            const krasas = ["sarkans", "zaļš", "zils", "dzeltens", "melns", "balts"];
+
+            function mekletajs(){
+                let userInput = document.getElementById("lietotajsInput").value;
+
+                for(let i = 0; i < krasas.length; i++){
+                    if(userInput == krasas[i]){
+                        alert("Uzminēji - " + i)
+                    }
+                }
+                
+            }
+
+        </script>
+    </body>
+</html>
