@@ -12,7 +12,7 @@
 
             <div class="task2">
                 <input type="text" id="guessInput">
-                <button id="btn3" class="btn3" onClick="task2()">Klikšķini mani!</button>
+                <button id="btn3" class="btn3" onClick="task3()">Klikšķini mani!</button>
             </div>
 
             <script>
@@ -26,26 +26,45 @@
                     console.log(sum);
                 }
 
+                var skaitit = 0;
+
+                function task3(){
+
+                    let word = document.getElementById("guessInput").value;
+
+                        if(word.length < 1){
+                            alert("Kļūda!");
+                        }else{
+                            if(word == "Programmēšana"){
+                                skaitit = 0;
+                                document.getElementById("btn3").style.backgroundColor = "Green";
+                            }else{
+                                skaitit = skaitit + 1;
+                                document.getElementById("btn3").style.backgroundColor = "Red";
+                            }
+
+                            if(skaitit == 3){
+                                skaitit = 0;
+                                alert("Tu neuzminēji!")
+                            }
+                        }
+                }
+
+
                 function task2(){
                     
-                        for(let i = 1; i < 4; i++){
+                    let word = document.getElementById("guessInput").value;
 
-                        let word = document.getElementById("guessInput").value;
-
-                            if(word.length < 1){
-                                alert("Kļūda!");
-                                i = i - 1;
+                        if(word.length < 1){
+                            alert("Kļūda!");
+                        }else{
+                            if(word == "Programmēšana"){
+                                document.getElementById("btn3").style.backgroundColor = "Green";
                             }else{
-                                if(word == "Programmēšana"){
-                                    document.getElementById("btn3").style.backgroundColor = "Green";
-                                    return;
-                                }else{
-                                    document.getElementById("btn3").style.backgroundColor = "Red";
-                                }
-                            }  
+                                document.getElementById("btn3").style.backgroundColor = "Red";
+                            }
+                        }  
 
-                        }
-                        
                 }
                 
             </script>
